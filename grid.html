@@ -8,9 +8,11 @@
     <style>
       .father {
         display: grid;
-        grid-auto-rows: 100px;
+        grid-auto-rows: 600px;
         grid-gap: 5px;
-        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-columns: minmax(200px, 1fr) repeat(3, 1fr); */
+        /* grid-template-columns: max-content repeat(3, 1fr); */
+        grid-template-columns: min-content repeat(3, 1fr);
       }
       .first {
         background-color: #f1c40f;
@@ -28,7 +30,12 @@
   </head>
   <body>
     <div class="father">
-      <div class="first"></div>
+      <div class="first">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
+        voluptatum autem itaque odit molestiae maxime odio cumque aliquam ullam
+        delectus deserunt modi optio numquam est aut, porro expedita? Quae,
+        voluptate.
+      </div>
       <div class="second"></div>
       <div class="third"></div>
       <div class="fourth"></div>
