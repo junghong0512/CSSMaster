@@ -10,8 +10,7 @@
         display: grid;
         grid-gap: 10px;
         grid-auto-rows: 100px;
-        grid-template-columns: [first-line] 1fr [second-line] 1fr [third-line] 1fr [fourth-line] 1fr [fifth-line] 1fr [last-line];
-        grid-auto-flow: row dense;
+        grid-template-columns: repeat(5, 1fr);
       }
 
       .box {
@@ -29,8 +28,10 @@
         background-color: #344952;
       }
       .box:first-child {
-        grid-column-start: second-line;
-        grid-column-end: fourth-line;
+        /* grid-row-start: 2;
+        grid-row-end: 5; */
+        grid-row: span 2;
+        grid-column: span 4;
       }
     </style>
   </head>
