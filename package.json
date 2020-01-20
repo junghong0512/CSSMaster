@@ -1,0 +1,19 @@
+{
+  "name": "CSSMaster",
+  "version": "1.0.0",
+  "description": "CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junghong91/CSSMaster.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junghong91/CSSMaster/issues"
+  },
+  "homepage": "https://github.com/junghong91/CSSMaster#readme",
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}
