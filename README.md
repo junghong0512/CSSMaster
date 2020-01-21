@@ -1,13 +1,17 @@
 # CSS Masterclass
+
 CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 
 ## CSS Flex
+
 - [x] CSS Flex Basics
 - [x] Main Axis and Cross Axis
 - [x] Flex Direction
 - [x] Flex Wrap
 - [x] Align Self
+
 ## CSS Grid
+
 - [x] CSS Grid Basics ( Row, columns and gaps)
 - [x] Auto columns, auto rows
 - [x] Template Areas
@@ -21,11 +25,15 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 - [x] Grid Row, Row Start and End
 - [x] Grid Area
 - [x] Justify, Align, Place Self
+
 ## Using CSS4
-- [ ] Installing Parcel
+
+- [x] Installing Parcel
 - [ ] Configuring PostCSS
 - [ ] Testing
+
 ## CSS4 Awesomeness
+
 - [ ] :matches , :not
 - [ ] CSS Variables
 - [ ] @custom-selector
@@ -33,7 +41,9 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 - [ ] Media Query Ranges
 - [ ] color-mod, gray(), system-ui
 - [ ] Nesting Rules
+
 ## Conclusions
+
 - [ ] CSS Grid Kiss
 - [ ] Practice Flexbox
 - [ ] Practice Grid
