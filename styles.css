@@ -6,6 +6,20 @@
   background-color: peru;
 } */
 
-li:not(.target) {
+/* li:not(.target) {
   background-color: blue;
+} */
+
+:root {
+  --awesomeColor: #e84393;
+}
+
+li:first-child {
+  color: var(--awesomeColor);
+}
+
+@custom-selector :--headers h1, h2, h3, h4, h5, h6;
+
+:--headers {
+  color: #d63031;
 }
