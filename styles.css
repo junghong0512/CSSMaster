@@ -10,16 +10,35 @@
   background-color: blue;
 } */
 
-:root {
+/* :root {
   --awesomeColor: #e84393;
 }
 
 li:first-child {
   color: var(--awesomeColor);
-}
+} */
+
+/* 
+  Custom Selector
 
 @custom-selector :--headers h1, h2, h3, h4, h5, h6;
 
 :--headers {
   color: #d63031;
+}
+
+@custom-selector :--anchor a;
+
+:--anchor {
+  color: red; 
+}
+*/
+
+/* @custom-media --ipad-size (max-width: 850px); */
+@custom-media --ipad-size (600px <= width < 850px);
+
+@media (--ipad-size) {
+  body {
+    background-color: skyblue;
+  }
 }
