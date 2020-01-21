@@ -34,7 +34,7 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 
 ## CSS4 Awesomeness
 
-- [ ] :matches , :not
+- [x] :matches , :not
 - [ ] CSS Variables
 - [ ] @custom-selector
 - [ ] @custom-media
