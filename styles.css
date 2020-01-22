@@ -35,10 +35,18 @@ li:first-child {
 */
 
 /* @custom-media --ipad-size (max-width: 850px); */
-@custom-media --ipad-size (600px <= width < 850px);
+/* @custom-media --ipad-size (600px <= width < 850px);
 
 @media (--ipad-size) {
   body {
     background-color: skyblue;
   }
+} */
+/* 
+h1 {
+  color: color-mod(#f1c40f alpha(20%));
+} */
+
+h1 {
+  font-family: system-ui;
 }
