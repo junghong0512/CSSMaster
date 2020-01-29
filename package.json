@@ -14,8 +14,8 @@
   },
   "homepage": "https://junghong91.github.io/CSSMaster",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel index.html",
+    "start": "parcel practiceProjects/project_1/index.html",
+    "build": "parcel practiceProjects/project_1/index.html",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
