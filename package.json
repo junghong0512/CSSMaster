@@ -12,11 +12,15 @@
   "bugs": {
     "url": "https://github.com/junghong91/CSSMaster/issues"
   },
-  "homepage": "https://github.com/junghong91/CSSMaster#readme",
+  "homepage": "https://junghong91.github.io/CSSMaster",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel index.html",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "postcss-grid-kiss": "^2.3.0",
     "postcss-preset-env": "^6.7.0"
   },
