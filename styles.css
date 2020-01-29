@@ -1,71 +1,178 @@
-/* 
-
-  Matches
-
-  li:matches(:nth-child(even), .target) {
-  background-color: peru;
-} */
-
-/* li:not(.target) {
-  background-color: blue;
-} */
-
-/* :root {
-  --awesomeColor: #e84393;
+:root {
+  --colorOne: #d0edf5;
+  --colorTwo: #e2f0d6;
+  --colorThree: #fcf8b9;
+  --colorFour: #ebebeb;
+  --colorFive: #e6e6e6;
+  --colorSix: #e2f0d6;
+  --colorSeven: #fcf8b9;
 }
 
-li:first-child {
-  color: var(--awesomeColor);
-} */
-
-/* 
-  Custom Selector
-
-@custom-selector :--headers h1, h2, h3, h4, h5, h6;
-
-:--headers {
-  color: #d63031;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-@custom-selector :--anchor a;
-
-:--anchor {
-  color: red; 
+ul {
+  list-style: none;
 }
-*/
 
-/* @custom-media --ipad-size (max-width: 850px); */
-/* @custom-media --ipad-size (600px <= width < 850px);
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
 
-@media (--ipad-size) {
-  body {
-    background-color: skyblue;
-  }
-} */
-/* 
-h1 {
-  color: color-mod(#f1c40f alpha(20%));
-} */
-/* 
-h1 {
-  font-family: system-ui;
-} */
+.threeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
-main {
-  background-color: blue;
+.header {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
 
-  & section {
-    background-color: red;
-    width: 500px;
-    & li {
-      background-color: blanchedalmond;
-      width: 400px;
-      & a {
-        color: black;
-        &:hover {
-          font-size: 30px;
-        }
-      }
-    }
-  }
+.header h1 {
+  margin-top: 0px;
+  font-size: 60px;
+}
+
+.header .header__column {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__nav span {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.header__nav li {
+  margin-bottom: 10px;
+}
+
+.header__nav li:last-child {
+  margin-bottom: 0px;
+}
+
+.grid {
+  grid-auto-rows: 30vh;
+  grid-gap: 20px;
+}
+
+.grid .grid__items {
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid .grid__items:first-child {
+  grid-row: span 2;
+  background-color: var(--colorOne);
+}
+
+.grid .grid__items:nth-child(2) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://i.pinimg.com/564x/f9/19/b7/f919b70a948f719b8ac4d84aebdbe1f7.jpg);
+}
+
+.grid .grid__items:nth-child(3) {
+  background-color: var(--colorTwo);
+}
+
+.grid .grid__items:nth-child(4) {
+  grid-row: span 2;
+  background-image: url(https://i.pinimg.com/564x/5b/9e/86/5b9e86c3b41d374e4854ba29304266ee.jpg);
+}
+
+.grid .grid__items:nth-child(5) {
+  background-color: var(--colorThree);
+}
+
+.grid .grid__items:nth-child(6) {
+  background-color: var(--colorFour);
+}
+
+.grid .grid__items:nth-child(7) {
+  background-image: url(https://i.pinimg.com/564x/4d/a4/a3/4da4a38ae9e8e2420839e32cb4324d67.jpg);
+}
+
+.grid .grid__items:nth-child(8) {
+  grid-area: span 2 / span 2;
+  background-color: var(--colorFive);
+}
+
+.grid .grid__items:nth-child(9) {
+  grid-row: span 2;
+  background-image: url(https://i.pinimg.com/564x/70/db/ef/70dbef258e18e5c5a467ec8bb81e2a0b.jpg);
+}
+
+.grid .grid__items:nth-child(10) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://i.pinimg.com/564x/e3/f7/9f/e3f79f04a9d20c784aedd2ffbbd1d2fb.jpg);
+}
+
+.grid .grid__items:nth-child(11) {
+  background-image: url(https://i.pinimg.com/564x/9c/d0/60/9cd060ff853ae3d1ec1cd4a80d9ee43c.jpg);
+}
+
+.grid .grid__items:nth-child(12) {
+  background-image: url(https://i.pinimg.com/564x/55/17/1c/55171c8d5d00b23cd98d890084ecad6d.jpg);
+}
+
+.grid .grid__items:nth-child(13) {
+  grid-area: span 2 / span 2;
+  background-color: var(--colorSix);
+}
+
+.grid .grid__items:nth-child(14) {
+  background-image: url(https://i.pinimg.com/564x/9c/57/58/9c57585b74fe4800f28178d10831c1e0.jpg);
+}
+
+.grid .grid__items:nth-child(15) {
+  background-color: var(--colorSeven);
+}
+
+.item__article {
+  display: grid;
+  margin: 15px;
+  flex-direction: column;
+}
+
+.item__article span {
+  margin-bottom: 10px;
+}
+
+.item__article .article__category {
+  font-size: 100%;
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.4);
+}
+.item__article .article__title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.footer .firstGrid {
+  text-align: center;
+}
+
+.footer .footer__category {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 5px;
 }
