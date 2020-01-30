@@ -183,7 +183,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 var(--padding);
+  padding: 12px;
 }
 
 .recipe .recipe__btn {
