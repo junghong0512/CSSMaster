@@ -1,0 +1,209 @@
+:root {
+  --greyColor: rgba(0, 0, 0, 0.5);
+  --borderRadius: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0 15px;
+  padding-bottom: 20px;
+}
+
+.header {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.header__titles .header__title {
+  font-size: 30px;
+}
+
+.header__titles .header__subtitle {
+  font-size: 14px;
+  margin-top: 5px;
+  color: var(--greyColor);
+}
+
+.header__icon svg {
+  fill: var(--greyColor);
+  width: 23px;
+  height: 23px;
+}
+
+.header__icon:first-child {
+  margin-right: 15px;
+}
+
+.main {
+  margin: 50px 0;
+  margin-bottom: 100px;
+}
+
+.recipe {
+  height: 40vh;
+  border-radius: var(--borderRadius);
+  background-image: url(https://i.pinimg.com/564x/95/dc/6c/95dc6ca2d745a70fb3ea1d187dbaad46.jpg);
+  background-size: 100%;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.recipe .recipe__heart {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe__heart svg {
+  fill: #e74c3c;
+  width: 20px;
+}
+
+.recipe .recipe__info {
+  background-color: white;
+  border-radius: var(--borderRadius);
+  width: 90%;
+  padding: 10px 25px;
+  box-shadow: 0 7px 20px rgba(50, 50, 93, 0.1), 0 3px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  top: 50px;
+}
+
+.recipe__info .recipe__title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.recipe__info .recipe__meta {
+  color: var(--greyColor);
+  font-weight: 600;
+  padding-bottom: 20px;
+  border-bottom: 1.5px solid var(--greyColor);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.recipe__info .recipe__social {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.recipe__social .recipe__social-item {
+  display: flex;
+  align-items: center;
+}
+
+.recipe__social-item svg {
+  margin-left: 10px;
+  fill: var(--greyColor);
+}
+
+.recommended .recommended__header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.recommended .recommended__title {
+  font-size: 20px;
+}
+
+.recommended .recommended__small {
+  color: var(--greyColor);
+  font-weight: 650;
+}
+
+.recommended__grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: minmax(120px, 1fr);
+  grid-auto-columns: minmax(120px, 1fr);
+  grid-gap: 25px;
+  overflow: scroll;
+}
+
+.recommended-recipe {
+  border-radius: var(--borderRadius);
+  height: 18vh;
+  background-size: 100%;
+  background-position: center center;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  box-shadow: 0 7px 20px rgba(50, 50, 93, 0.1), 0 3px 20px rgba(0, 0, 0, 0.08);
+}
+
+.recommended-recipe .recommended-recipe__info {
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+.recommended-recipe__info .recommended-recipe__title {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.recommended-recipe__info .recommended-recipe__subtitle {
+  font-size: 8px;
+  color: var(--greyColor);
+}
+
+.recommended-recipe:first-child {
+  background-image: url(https://i.pinimg.com/564x/3a/07/47/3a0747dceb365852b2db22c32ff37fcd.jpg);
+}
+
+.recommended-recipe:nth-child(2) {
+  background-image: url(https://i.pinimg.com/564x/d5/9c/db/d59cdba7e81946b5db7219e106d10cea.jpg);
+}
+
+.recommended-recipe:nth-child(3) {
+  background-image: url(https://i.pinimg.com/564x/65/52/7c/65527c38a298efc87ce3785debb8c6e9.jpg);
+}
+
+.recommended-recipe:nth-child(4) {
+  background-image: url(https://i.pinimg.com/564x/09/3f/84/093f8410929081023ec09091c8e71578.jpg);
+}
+
+.recommended-recipe:nth-child(5) {
+  background-image: url(https://i.pinimg.com/564x/35/40/6a/35406a43af95c801d0993b2dbf2b7c30.jpg);
+}
+
+.recommended-recipe:nth-child(6) {
+  background-image: url(https://i.pinimg.com/236x/ff/69/29/ff69290c9c074380396e8ad10e728bb4.jpg);
+}
+
+.recommended-recipe:last-child {
+  background-image: url(https://i.pinimg.com/564x/5b/d0/60/5bd06015aaeaa4ed6944816a161396bc.jpg);
+}
