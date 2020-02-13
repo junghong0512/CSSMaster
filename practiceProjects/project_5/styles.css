@@ -164,9 +164,6 @@ body {
   z-index: 0;
 }
 
-.match-item img {
-}
-
 .match-item:nth-child(2) svg {
   fill: #9b78dd;
 }
