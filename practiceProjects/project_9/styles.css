@@ -1,0 +1,142 @@
+:root {
+  --greyColor: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+main {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f8eceb;
+  color: #252523;
+}
+
+.header {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  align-items: center;
+  top: 20px;
+}
+
+.header .header__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+  gap: 20px;
+  font-weight: 700;
+}
+
+.header .header__btns {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn:last-child {
+  margin-left: 25px;
+}
+
+.header .header__btn {
+  text-transform: uppercase;
+  fill: var(--greyColor);
+}
+
+.header .header__btn:last-child {
+  color: var(--greyColor);
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main .main__photo {
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://i.pinimg.com/564x/ac/59/e2/ac59e2aafddcd34b2c7ddc3b9f234bde.jpg);
+}
+
+.main .main__content {
+  align-self: center;
+  height: 100%;
+  position: relative;
+}
+
+.main__content .main__title {
+  font-size: 90px;
+  margin-top: 150px;
+  margin-bottom: 250px;
+  padding-left: 100px;
+}
+
+.main .main__pages {
+  padding-left: 100px;
+}
+
+.main__pages .main__current-page {
+  font-size: 50px;
+  font-weight: 600;
+  color: black;
+}
+
+.main__pages .main__total-pages {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--greyColor);
+}
+
+.main__content .navigation {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 12.5px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation .navigation__arrow {
+  font-size: 55px;
+  color: var(--greyColor);
+}
+
+.navigation svg {
+  fill: var(--greyColor);
+}
+
+.navigation .navigation__icon {
+  margin-right: 10px;
+}
+
+.navigation .navigation__icon:last-child {
+  margin-right: 0;
+}
